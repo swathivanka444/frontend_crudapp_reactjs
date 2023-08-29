@@ -12,7 +12,6 @@ import Navbar from './component/Navbar';
 import AddTask from './component/AddTask';
 import EditTask from './component/EditTask';
 import ViewTask from './component/ViewTask';
-import Login from './component/Login';
 
 function App() {
   return (
@@ -20,11 +19,10 @@ function App() {
 <BrowserRouter>
 <Navbar/>
 <Routes>
-    <Route path='/' element={<Login/>}/>
-    <Route path='/home' element={<AllTasks/>}/> 
+    <Route path='/' element={<AllTasks/>}/> 
     <Route path='/AddTask' element={<AddTask/>}/>
-    <Route path='/EditTask/:taskId' element={<EditTask />}/>
-    <Route path='/ViewTask/:taskId' element={<ViewTask />}/>    
+    <Route path='/EditTask/:id ' element={<EditTask />}/>
+    <Route path='/ViewTask/:id ' element={<ViewTask />}/>    
 </Routes>
 </BrowserRouter> 
  </>
